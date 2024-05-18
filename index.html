@@ -16,7 +16,7 @@
   <h1>Search Local Weather</h1>
 
 <div class="form-container">
-  <form onsubmit="fetchWeather()">
+  <form onsubmit="fetchWeather(event)">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">City</label>
       <input type="text" class="form-control" id="inputcity" aria-describedby="cityHelp">
@@ -26,6 +26,7 @@
 
     <button type="submit" class="btn btn-primary">Search</button>
   </form>
+  <div id="weather-info"></div>
 </div>
 
   <style>
